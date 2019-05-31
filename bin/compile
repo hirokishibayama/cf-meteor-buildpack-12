@@ -70,8 +70,8 @@ install_meteor() {
 build() {
   (
     status "Building meteor npm i"
-    meteor npm i 
     cd $BUILD_DIR
+    meteor npm i 
     status "Building meteor bundle $BUILD_DIR"
     meteor build --directory deploy
     cd deploy/bundle/programs/server
