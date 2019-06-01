@@ -71,12 +71,12 @@ install_meteor() {
 build() {
   (
     cd $BUILD_DIR
-    status "meteor remove blaze-html-templates jquery"
-    meteor remove blaze-html-templates jquery
-    status "meteor add static-html akryum:vue-component"
-    meteor add static-html akryum:vue-component
-    status "meteor npm i -S babel-runtime vue vue-meteor-tracker vue-router"
-    meteor npm i -S babel-runtime vue vue-meteor-tracker vue-router
+    # status "meteor remove blaze-html-templates jquery"
+    # meteor remove blaze-html-templates jquery
+    # status "meteor add static-html akryum:vue-component"
+    # meteor add static-html akryum:vue-component
+    # status "meteor npm i -S babel-runtime vue vue-meteor-tracker vue-router"
+    # meteor npm i -S babel-runtime vue vue-meteor-tracker vue-router
     # status "meteor update"
     # meteor update
     # status "meteor update --all-packages"
