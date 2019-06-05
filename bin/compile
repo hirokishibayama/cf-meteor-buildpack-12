@@ -18,7 +18,7 @@ status() {
 }
 
 # 8.11.3 
-node_version=8.11.3 
+node_version=8.15.1 
 # $(curl --silent --get https://semver.io/node/resolve/0.10.x)
 
 install_node() {
@@ -72,16 +72,16 @@ install_meteor() {
 build() {
   (
     cd $BUILD_DIR
-    # status "meteor remove blaze-html-templates jquery"
-    # meteor remove blaze-html-templates jquery
-    # status "meteor add static-html akryum:vue-component"
-    # meteor add static-html akryum:vue-component
-    # status "meteor npm i -S babel-runtime vue vue-meteor-tracker vue-router"
-    # meteor npm i -S babel-runtime vue vue-meteor-tracker vue-router
-    # status "meteor update"
-    # meteor update
-    # status "meteor update --all-packages"
-    # meteor update --all-packages
+    status "meteor remove blaze-html-templates jquery"
+    meteor remove blaze-html-templates jquery
+    status "meteor add static-html akryum:vue-component"
+    meteor add static-html akryum:vue-component
+    status "meteor npm i -S babel-runtime vue vue-meteor-tracker vue-router"
+    meteor npm i -S babel-runtime vue vue-meteor-tracker vue-router
+    status "meteor update"
+    meteor update
+    status "meteor update --all-packages"
+    meteor update --all-packages
     status "meteor npm i"
     meteor npm i
     status "Building meteor bundle $BUILD_DIR"
