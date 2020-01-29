@@ -79,8 +79,8 @@ build() {
     meteor add static-html akryum:vue-component
     status "meteor npm i -S babel-runtime vue vue-meteor-tracker vue-router"
     meteor npm i -S babel-runtime vue vue-meteor-tracker vue-router
-    status "meteor update"
-    meteor update
+    # status "meteor update"
+    # meteor update
     status "meteor update --all-packages"
     meteor update --all-packages
     status "meteor npm i"
